@@ -1,4 +1,5 @@
 import CourseModel from './model.js';
+
 export const createCourse = async (course) => {
   try {
     return await CourseModel.create(course);
@@ -16,6 +17,7 @@ export const deleteCourse = async (courseId) => {
     throw error;
   }
 };
+
 export const findAllCourses = async () => {
   try {
     return await CourseModel.find();

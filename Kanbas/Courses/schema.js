@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+
 const courseSchema = new mongoose.Schema({
   number: { type: String },
   name: { type: String, required: true },
@@ -8,4 +9,5 @@ const courseSchema = new mongoose.Schema({
   credits: { type: Number },
   description: { type: String, required: true }
 }, { collection: 'courses' });
+
 export default courseSchema;

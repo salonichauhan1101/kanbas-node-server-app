@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+
 const moduleSchema = new mongoose.Schema({
     name: String,
     description: String,
@@ -9,4 +10,5 @@ const moduleSchema = new mongoose.Schema({
         module: String
     }]
 }, {collection: 'modules'});
+
 export default moduleSchema;
